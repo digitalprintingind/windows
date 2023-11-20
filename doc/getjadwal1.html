@@ -1,0 +1,71 @@
+<script>
+    var mywindow;
+    function openCenteredWindow(url) {
+        var width = 800;
+        var height = 500;
+        var left = parseInt((screen.availWidth/2) - (width/2));
+        var top = parseInt((screen.availHeight/2) - (height/2));
+        var windowFeatures = "width=" + width + ",height=" + height +
+                             ",status,resizable,left=" + left + ",top=" + top +
+                             ",screenX=" + left + ",screenY=" + top + ",scrollbars";
+        mywindow = window.open(url, "subWind", windowFeatures);
+    }
+    $(document).ready(function(){
+       $("a.print").click(function(){
+		   var semester = $("select[name='semester']").val();
+           var url = "http://mahasiswa.pusdat-unswagati.net:3308/khs/cetaknilai/<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: nim</p>
+<p>Filename: home/vjadwal.php</p>
+<p>Line Number: 16</p>
+
+</div>/"+semester;
+           openCenteredWindow(url);
+           return false;
+        });
+       $("a.print2").click(function(){
+           var url = "http://mahasiswa.pusdat-unswagati.net:3308/khs/cetaktranskrip/<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: nim</p>
+<p>Filename: home/vjadwal.php</p>
+<p>Line Number: 21</p>
+
+</div>";
+           openCenteredWindow(url);
+           return false;
+        });
+       $("a.print3").click(function(){
+           var url = "http://mahasiswa.pusdat-unswagati.net:3308/khs/cetaktranskripuniversitas/<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: nim</p>
+<p>Filename: home/vjadwal.php</p>
+<p>Line Number: 26</p>
+
+</div>";
+           openCenteredWindow(url);
+           return false;
+        });
+    });
+</script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="../css/icon.css" rel="stylesheet" type="text/css" media="screen"/>
+<style>
+	body {
+		margin-top:20px;
+	}
+</style>
+<div id=content>
+<div id="header-table">
+<table cellspacing='0' cellpadding='5' width=100% class="data">
+</table>
+</div>
+</div>
